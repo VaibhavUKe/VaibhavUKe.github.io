@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vaibhav Uke — Senior Mobile Engineer</title>
+  <meta name="description" content="Senior Mobile Engineer specializing in React Native and Android development. 4.1+ years building scalable apps serving 40K+ users across fintech and real estate.">
+  <meta name="keywords" content="React Native Developer, Android Developer, Mobile Engineer, Kotlin, TypeScript, Pune">
+  <meta property="og:title" content="Vaibhav Uke — Senior Mobile Engineer">
+  <meta property="og:description" content="Senior Mobile Engineer — React Native & Android. Building apps for 40K+ users.">
+  <meta property="og:url" content="https://vaibhavuke.github.io">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+</head>
+<body>
+
+  <!-- Page Loader -->
+  <div class="page-loader" id="loader">
+    <div class="loader-inner">
+      <span class="loader-logo">VU<span class="accent">.</span></span>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- ── NAVIGATION ── -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">VU<span class="accent">.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link nav-cta">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section id="hero" class="hero">
+    <div class="hero-bg">
+      <canvas id="gridCanvas"></canvas>
+      <div class="hero-glow-1"></div>
+      <div class="hero-glow-2"></div>
+    </div>
+
+    <div class="hero-inner">
+      <div class="hero-left">
+        <div class="hero-badge hero-anim" data-delay="100">
+          <span class="badge-dot"></span>
+          Available for opportunities
+        </div>
+
+        <h1 class="hero-name hero-anim" data-delay="250">
+          Vaibhav<br><span class="accent">Uke</span>
+        </h1>
+
+        <div class="hero-subtitle hero-anim" data-delay="420">
+          <span class="subtitle-prefix">I craft&nbsp;</span>
+          <span class="typewriter" id="typewriter"></span>
+        </div>
+
+        <p class="hero-bio hero-anim" data-delay="560">
+          Senior Mobile Engineer with <strong>4.1+ years</strong> building production-grade
+          <span class="accent">React Native</span> &amp; <span class="accent">Android</span> apps.
+          Currently shipping for <strong>40K+ users</strong> at Homesfy Realty.
+        </p>
+
+        <div class="hero-actions hero-anim" data-delay="700">
+          <a href="#projects" class="btn btn-primary">View Work</a>
+          <a href="#contact" class="btn btn-outline">Get In Touch</a>
+          <a href="mailto:iamvaibhavuke@gmail.com" class="btn btn-ghost">Email Me ↗</a>
+        </div>
+
+        <div class="hero-stats hero-anim" data-delay="900">
+          <div class="stat-item">
+            <div class="stat-val"><span class="count" data-to="4.1">0</span>+</div>
+            <div class="stat-lbl">Years Exp.</div>
+          </div>
+          <div class="stat-sep"></div>
+          <div class="stat-item">
+            <div class="stat-val"><span class="count" data-to="40" data-suffix="K">0</span>+</div>
+            <div class="stat-lbl">Users Served</div>
+          </div>
+          <div class="stat-sep"></div>
+          <div class="stat-item">
+            <div class="stat-val"><span class="count" data-to="25" data-suffix="%">0</span></div>
+            <div class="stat-lbl">Retention Boost</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right hero-anim hero-anim-x" data-delay="350">
+        <div class="phone-wrap">
+          <div class="phone-frame">
+            <div class="phone-island"></div>
+            <div class="phone-screen">
+              <div class="mock-app">
+                <div class="mock-topbar">
+                  <div class="mock-greeting">Good morning 👋</div>
+                  <div class="mock-avatar"></div>
+                </div>
+                <div class="mock-card accent-card">
+                  <div class="mock-card-label">Total Leads</div>
+                  <div class="mock-card-val">1,284</div>
+                  <div class="mock-card-sub">↑ 12% this week</div>
+                </div>
+                <div class="mock-row">
+                  <div class="mock-mini-card">
+                    <div class="mock-mini-label">Closed</div>
+                    <div class="mock-mini-val">48</div>
+                  </div>
+                  <div class="mock-mini-card">
+                    <div class="mock-mini-label">Pipeline</div>
+                    <div class="mock-mini-val">236</div>
+                  </div>
+                </div>
+                <div class="mock-chart">
+                  <div class="mock-chart-label">Performance</div>
+                  <div class="mock-bars">
+                    <div class="mock-bar" style="--h:40%"></div>
+                    <div class="mock-bar" style="--h:65%"></div>
+                    <div class="mock-bar" style="--h:52%"></div>
+                    <div class="mock-bar" style="--h:82%"></div>
+                    <div class="mock-bar" style="--h:61%"></div>
+                    <div class="mock-bar accent-bar" style="--h:93%"></div>
+                    <div class="mock-bar" style="--h:74%"></div>
+                  </div>
+                </div>
+                <div class="mock-list">
+                  <div class="mock-list-item">
+                    <div class="mock-list-dot"></div>
+                    <div class="mock-list-line"></div>
+                  </div>
+                  <div class="mock-list-item">
+                    <div class="mock-list-dot"></div>
+                    <div class="mock-list-line short"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="phone-glow"></div>
+          <div class="phone-reflection"></div>
+        </div>
+
+        <!-- Floating tech badges -->
+        <div class="float-badge badge-rn">React Native</div>
+        <div class="float-badge badge-kotlin">Kotlin</div>
+        <div class="float-badge badge-ts">TypeScript</div>
+        <div class="float-badge badge-fire">Firebase</div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-hint">
+      <span>Scroll down</span>
+      <div class="scroll-arrow"></div>
+    </a>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="sec-header reveal">
+        <span class="sec-tag">01 &mdash; About</span>
+        <h2 class="sec-title">Who I Am</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p class="about-lead">
+            I'm a <strong>Senior Mobile Engineer</strong> based in Pune, India — I build mobile experiences that scale,
+            perform, and delight users.
+          </p>
+          <p>
+            Over the past 4+ years I've shipped production apps in <strong>fintech</strong> and <strong>real estate</strong> domains,
+            leading teams, architecting cross-platform solutions, and navigating the full lifecycle from Figma mocks to App Store release.
+          </p>
+          <p>
+            My stack is <strong>React Native</strong> for cross-platform and <strong>Kotlin / Jetpack Compose</strong> for native Android.
+            I care deeply about performance — smooth 60fps animations, reduced load times, and bulletproof crash-free rates.
+          </p>
+          <p>
+            Outside of my day job I'm exploring <strong>GenAI-powered mobile experiences</strong> — building LLM integrations,
+            RAG pipelines, and n8n automations that make apps feel alive.
+          </p>
+          <div class="about-chips">
+            <span class="chip">React Native</span>
+            <span class="chip">Android</span>
+            <span class="chip">Kotlin</span>
+            <span class="chip">Fintech</span>
+            <span class="chip">Real Estate</span>
+            <span class="chip">Team Lead</span>
+            <span class="chip">AI / LLM</span>
+            <span class="chip">CI/CD</span>
+          </div>
+        </div>
+
+        <div class="about-cards reveal">
+          <div class="about-card">
+            <div class="about-card-icon">📱</div>
+            <h3>Mobile First</h3>
+            <p>Specialized in React Native &amp; native Android — building apps that feel native on both platforms.</p>
+          </div>
+          <div class="about-card">
+            <div class="about-card-icon">⚡</div>
+            <h3>Performance Driven</h3>
+            <p>Load time reduction, 60fps animations, and measurable impact — 25% boost in user engagement at Homesfy.</p>
+          </div>
+          <div class="about-card">
+            <div class="about-card-icon">🤖</div>
+            <h3>AI Explorer</h3>
+            <p>Building GenAI-powered mobile experiences with LLM workflows, n8n, and RAG pipelines.</p>
+          </div>
+          <div class="about-card">
+            <div class="about-card-icon">👥</div>
+            <h3>Tech Leader</h3>
+            <p>Led 8 developers across concurrent projects at Mobiloitte — code reviews, delivery, architecture.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ── -->
+  <section id="skills" class="section sec-alt">
+    <div class="container">
+      <div class="sec-header reveal">
+        <span class="sec-tag">02 &mdash; Skills</span>
+        <h2 class="sec-title">Tech Stack</h2>
+        <p class="sec-sub">Technologies I work with every day</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">
+            <span class="skill-group-icon">📱</span> Mobile
+          </h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <i class="devicon-react-original colored"></i>
+              <span>React Native</span>
+            </div>
+            <div class="skill-item">
+              <i class="devicon-kotlin-plain colored"></i>
+              <span>Kotlin</span>
+            </div>
+            <div class="skill-item">
+              <i class="devicon-android-plain colored"></i>
+              <span>Android</span>
+            </div>
+            <div class="skill-item">
+              <span class="icon-text">🎨</span>
+              <span>Jetpack Compose</span>
+            </div>
+            <div class="skill-item">
+              <span class="icon-text">🔄</span>
+              <span>Reanimated</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">
+            <span class="skill-group-icon">💻</span> Languages
+          </h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <i class="devicon-typescript-plain colored"></i>
+              <span>TypeScript</span>
+            </div>
+            <div class="skill-item">
+              <i class="devicon-javascript-plain colored"></i>
+              <span>JavaScript</span>
+            </div>
+            <div class="skill-item">
+              <i class="devicon-python-plain colored"></i>
+              <span>Python</span>
+            </div>
+            <div class="skill-item">
+              <i class="devicon-kotlin-plain colored"></i>
+              <span>Kotlin</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">
+            <span class="skill-group-icon">🌐</span> Frontend & State
+          </h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <i class="devicon-react-original colored"></i>
+              <span>React JS</span>
+            </div>
+            <div class="skill-item">
+              <i class="devicon-redux-original colored"></i>
+              <span>Redux Toolkit</span>
+            </div>
+            <div class="skill-item">
+              <i class="devicon-html5-plain colored"></i>
+              <span>HTML5</span>
+            </div>
+            <div class="skill-item">
+              <i class="devicon-css3-plain colored"></i>
+              <span>CSS3</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">
+            <span class="skill-group-icon">🔧</span> Backend & APIs
+          </h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <i class="devicon-nodejs-plain colored"></i>
+              <span>Node.js</span>
+            </div>
+            <div class="skill-item">
+              <i class="devicon-graphql-plain colored"></i>
+              <span>GraphQL</span>
+            </div>
+            <div class="skill-item">
+              <span class="icon-text">🔌</span>
+              <span>REST APIs</span>
+            </div>
+            <div class="skill-item">
+              <span class="icon-text">🔗</span>
+              <span>WebSocket</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">
+            <span class="skill-group-icon">☁️</span> Cloud & Infra
+          </h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <i class="devicon-firebase-plain colored"></i>
+              <span>Firebase</span>
+            </div>
+            <div class="skill-item">
+              <i class="devicon-docker-plain colored"></i>
+              <span>Docker</span>
+            </div>
+            <div class="skill-item">
+              <i class="devicon-github-original colored"></i>
+              <span>GitHub / CI-CD</span>
+            </div>
+            <div class="skill-item">
+              <span class="icon-text">☁️</span>
+              <span>Google Cloud</span>
+            </div>
+            <div class="skill-item">
+              <i class="devicon-mongodb-plain colored"></i>
+              <span>MongoDB</span>
+            </div>
+            <div class="skill-item">
+              <i class="devicon-mysql-plain colored"></i>
+              <span>MySQL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">
+            <span class="skill-group-icon">💳</span> Payments & AI
+          </h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <span class="icon-text">💳</span>
+              <span>Razorpay</span>
+            </div>
+            <div class="skill-item">
+              <span class="icon-text">🍎</span>
+              <span>Apple Pay</span>
+            </div>
+            <div class="skill-item">
+              <span class="icon-text">💰</span>
+              <span>Stripe</span>
+            </div>
+            <div class="skill-item">
+              <span class="icon-text">🤖</span>
+              <span>LLM / RAG</span>
+            </div>
+            <div class="skill-item">
+              <span class="icon-text">⚙️</span>
+              <span>n8n Workflows</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EXPERIENCE ── -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="sec-header reveal">
+        <span class="sec-tag">03 &mdash; Experience</span>
+        <h2 class="sec-title">Work History</h2>
+      </div>
+
+      <div class="timeline">
+
+        <!-- Homesfy -->
+        <div class="tl-item reveal">
+          <div class="tl-left">
+            <div class="tl-dot active"></div>
+            <div class="tl-line"></div>
+          </div>
+          <div class="tl-card">
+            <div class="tl-header">
+              <div class="tl-company-wrap">
+                <h3 class="tl-company">Homesfy Realty Limited</h3>
+                <span class="tl-badge current">Current</span>
+              </div>
+              <p class="tl-role">Mobile Application Engineer — React Native &amp; Android</p>
+              <div class="tl-meta">
+                <span class="tl-period">Dec 2023 — Present</span>
+                <span class="tl-dot-sep">·</span>
+                <span class="tl-location">Pune, India</span>
+              </div>
+            </div>
+
+            <div class="tl-project">
+              <div class="tl-project-title">
+                <span class="tl-project-dot"></span>
+                MyMagnet — Real Estate App for Channel Partners
+              </div>
+              <ul class="tl-bullets">
+                <li>Spearheaded development of a high-traffic React Native app serving <strong>40K+ users</strong>, implementing load time reduction, smooth animations, and navigation improvements</li>
+                <li>Oversaw app analytics, Crashlytics, native code integration, and Firebase push notifications — proactively addressing stability issues</li>
+                <li>Orchestrated release cycles for both <strong>Google Play &amp; Apple App Store</strong>, ensuring adherence to platform guidelines</li>
+                <li>Introduced user-centric features contributing to a <strong>25% increase</strong> in engagement and retention</li>
+              </ul>
+            </div>
+
+            <div class="tl-project">
+              <div class="tl-project-title">
+                <span class="tl-project-dot"></span>
+                Productivity App — In-House Team Management (Jetpack Compose)
+              </div>
+              <ul class="tl-bullets">
+                <li>Built from scratch in <strong>Jetpack Compose</strong>, streamlining scheduling, timeline tracking, and hierarchical team structures</li>
+                <li>Implemented gesture-based actions and dynamic data visualizations with interactive graphs and reports</li>
+              </ul>
+            </div>
+
+            <div class="tl-tech">
+              <span>React Native</span>
+              <span>Kotlin</span>
+              <span>Jetpack Compose</span>
+              <span>Firebase</span>
+              <span>Redux Toolkit</span>
+              <span>Crashlytics</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobiloitte -->
+        <div class="tl-item reveal">
+          <div class="tl-left">
+            <div class="tl-dot"></div>
+          </div>
+          <div class="tl-card">
+            <div class="tl-header">
+              <div class="tl-company-wrap">
+                <h3 class="tl-company">Mobiloitte Technologies</h3>
+                <span class="tl-badge lead">Team Lead</span>
+              </div>
+              <p class="tl-role">React Native Developer → Team Lead</p>
+              <div class="tl-meta">
+                <span class="tl-period">Apr 2022 — Nov 2023</span>
+                <span class="tl-dot-sep">·</span>
+                <span class="tl-location">Pune, India</span>
+              </div>
+            </div>
+
+            <div class="tl-project">
+              <ul class="tl-bullets">
+                <li>Led a team of <strong>8 developers</strong> across concurrent projects — code reviews, architecture decisions, and on-time delivery</li>
+                <li>Built and maintained scalable React Native apps across <strong>fintech, real estate, and utility</strong> platforms integrating 8+ third-party SDKs and payment gateways</li>
+                <li>Developed fintech app with MLM-based architecture supporting secure transactions and utility service integrations (mobile recharge, gas bills, DTH)</li>
+                <li>Integrated <strong>Razorpay, Apple Pay, and In-App Purchases</strong> for seamless financial workflows</li>
+                <li>Collaborated with backend teams, designers, and stakeholders to ship production-ready mobile solutions</li>
+              </ul>
+            </div>
+
+            <div class="tl-tech">
+              <span>React Native</span>
+              <span>TypeScript</span>
+              <span>Razorpay</span>
+              <span>Apple Pay</span>
+              <span>GraphQL</span>
+              <span>REST APIs</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ── -->
+  <section id="projects" class="section sec-alt">
+    <div class="container">
+      <div class="sec-header reveal">
+        <span class="sec-tag">04 &mdash; Projects</span>
+        <h2 class="sec-title">Featured Work</h2>
+        <p class="sec-sub">Apps built, shipped, and used by thousands</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- MyMagnet — featured large card -->
+        <div class="proj-card proj-featured reveal">
+          <div class="proj-body">
+            <div class="proj-top">
+              <span class="proj-tag">Real Estate · Production · iOS &amp; Android</span>
+              <h3 class="proj-title">MyMagnet Real Estate Broker</h3>
+              <p class="proj-desc">
+                High-traffic platform for real estate channel partners — managing leads, CRM workflows,
+                commission tracking, and property listings across 6 major Indian cities.
+                Built on a scalable React Native architecture with Firebase backend.
+              </p>
+            </div>
+
+            <div class="proj-metrics">
+              <div class="proj-metric">
+                <span class="proj-metric-val">40K+</span>
+                <span class="proj-metric-lbl">Active Users</span>
+              </div>
+              <div class="proj-metric">
+                <span class="proj-metric-val">25%</span>
+                <span class="proj-metric-lbl">Retention ↑</span>
+              </div>
+              <div class="proj-metric">
+                <span class="proj-metric-val">6</span>
+                <span class="proj-metric-lbl">Cities</span>
+              </div>
+            </div>
+
+            <div class="proj-tech">
+              <span>React Native</span>
+              <span>TypeScript</span>
+              <span>Firebase</span>
+              <span>Redux</span>
+              <span>GraphQL</span>
+              <span>Crashlytics</span>
+            </div>
+
+            <div class="proj-links">
+              <a href="https://apps.apple.com/in/app/mymagnet-real-estate-broker/id6466982347" target="_blank" rel="noopener" class="store-btn ios-btn">
+                <svg class="store-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                <div class="store-text">
+                  <span class="store-sub">Download on the</span>
+                  <span class="store-name">App Store</span>
+                </div>
+              </a>
+              <a href="https://play.google.com/store/apps/details?id=io.mymagnet.keys.twa" target="_blank" rel="noopener" class="store-btn play-btn">
+                <svg class="store-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.3.17.64.25.99.22l12.6-7.27-2.8-2.81-10.79 9.86zm-1.74-20c-.13.25-.2.53-.2.83v18.82c0 .3.07.58.2.83l.12.1 10.55-10.54v-.25L1.56 3.64l-.12.12zM20.95 10.6l-2.98-1.72-3.14 3.14 3.14 3.13 3-1.73c.86-.5.86-1.31-.02-1.82zM4.17.24L16.77 7.5l-2.8 2.8L3.18.24C3.53-.04 3.87-.07 4.17.24z"/></svg>
+                <div class="store-text">
+                  <span class="store-sub">Get it on</span>
+                  <span class="store-name">Google Play</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="proj-visual">
+            <div class="proj-phone">
+              <div class="proj-phone-frame">
+                <div class="proj-phone-island"></div>
+                <div class="proj-phone-screen">
+                  <div class="proj-mock">
+                    <div class="pm-header">
+                      <div class="pm-title-line"></div>
+                      <div class="pm-avatar-sm"></div>
+                    </div>
+                    <div class="pm-accent-card">
+                      <div class="pm-card-top">
+                        <div class="pm-card-label">Active Leads</div>
+                        <div class="pm-card-trend">↑ 12%</div>
+                      </div>
+                      <div class="pm-card-number">1,284</div>
+                    </div>
+                    <div class="pm-row">
+                      <div class="pm-mini">
+                        <div class="pm-mini-l">Closed</div>
+                        <div class="pm-mini-v">48</div>
+                      </div>
+                      <div class="pm-mini">
+                        <div class="pm-mini-l">Pipeline</div>
+                        <div class="pm-mini-v">236</div>
+                      </div>
+                    </div>
+                    <div class="pm-chart-wrap">
+                      <div class="pm-chart-lbl">Weekly Performance</div>
+                      <div class="pm-bars">
+                        <div class="pm-bar" style="--h:42%"></div>
+                        <div class="pm-bar" style="--h:68%"></div>
+                        <div class="pm-bar" style="--h:55%"></div>
+                        <div class="pm-bar pm-bar-accent" style="--h:86%"></div>
+                        <div class="pm-bar" style="--h:63%"></div>
+                        <div class="pm-bar pm-bar-accent" style="--h:94%"></div>
+                        <div class="pm-bar" style="--h:78%"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="proj-phone-glow"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- myMagnet Connect -->
+        <div class="proj-card reveal">
+          <div class="proj-body">
+            <div class="proj-top">
+              <span class="proj-tag">Productivity · Android · Jetpack Compose</span>
+              <h3 class="proj-title">myMagnet Connect</h3>
+              <p class="proj-desc">
+                Internal team management app for Homesfy — scheduling, timeline tracking,
+                hierarchical team structures, gesture-based actions, and dynamic data visualizations.
+                Built fully in Jetpack Compose from design to deployment.
+              </p>
+            </div>
+
+            <div class="proj-features">
+              <div class="feat-item"><span class="feat-dot"></span>Scheduling &amp; timeline tracking</div>
+              <div class="feat-item"><span class="feat-dot"></span>Hierarchical team structures</div>
+              <div class="feat-item"><span class="feat-dot"></span>Gesture-based interactions</div>
+              <div class="feat-item"><span class="feat-dot"></span>Interactive graphs &amp; reports</div>
+            </div>
+
+            <div class="proj-tech">
+              <span>Jetpack Compose</span>
+              <span>Kotlin</span>
+              <span>MVVM</span>
+              <span>Coroutines</span>
+              <span>StateFlow</span>
+            </div>
+
+            <div class="proj-links">
+              <a href="https://play.google.com/store/apps/details?id=com.myMagnetConnect&hl=en_IN" target="_blank" rel="noopener" class="store-btn play-btn">
+                <svg class="store-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.3.17.64.25.99.22l12.6-7.27-2.8-2.81-10.79 9.86zm-1.74-20c-.13.25-.2.53-.2.83v18.82c0 .3.07.58.2.83l.12.1 10.55-10.54v-.25L1.56 3.64l-.12.12zM20.95 10.6l-2.98-1.72-3.14 3.14 3.14 3.13 3-1.73c.86-.5.86-1.31-.02-1.82zM4.17.24L16.77 7.5l-2.8 2.8L3.18.24C3.53-.04 3.87-.07 4.17.24z"/></svg>
+                <div class="store-text">
+                  <span class="store-sub">Get it on</span>
+                  <span class="store-name">Google Play</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 360View -->
+        <div class="proj-card reveal">
+          <div class="proj-body">
+            <div class="proj-top">
+              <span class="proj-tag">Open Source · Android · OpenGL</span>
+              <h3 class="proj-title">360View — Panorama Viewer</h3>
+              <p class="proj-desc">
+                Native Android 360° panorama viewer built from scratch using OpenGL ES 2.0,
+                custom UV sphere mesh, GLSL shaders, and gyroscope sensor fusion.
+                Zero third-party 3D engines. Architected as a 3-module Gradle library.
+              </p>
+            </div>
+
+            <div class="proj-features">
+              <div class="feat-item"><span class="feat-dot"></span>OpenGL ES 2.0 + custom GLSL shaders</div>
+              <div class="feat-item"><span class="feat-dot"></span>Gyroscope sensor fusion for head tracking</div>
+              <div class="feat-item"><span class="feat-dot"></span>Real-time hotspot navigation system</div>
+              <div class="feat-item"><span class="feat-dot"></span>3-module Gradle library (core / ui / app)</div>
+            </div>
+
+            <div class="proj-tech">
+              <span>Kotlin</span>
+              <span>OpenGL ES 2.0</span>
+              <span>Jetpack Compose</span>
+              <span>GLSL</span>
+              <span>Coroutines</span>
+            </div>
+
+            <div class="proj-links">
+              <a href="https://github.com/vaibhavuke" target="_blank" rel="noopener" class="store-btn github-btn">
+                <svg class="store-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                <div class="store-text">
+                  <span class="store-sub">View on</span>
+                  <span class="store-name">GitHub</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="sec-header reveal">
+        <span class="sec-tag">05 &mdash; Contact</span>
+        <h2 class="sec-title">Let's Build Together</h2>
+        <p class="sec-sub">Open to full-time roles, freelance projects, and collaborations</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-left reveal">
+          <p class="contact-text">
+            Whether you're looking for a senior mobile engineer to lead your next product,
+            need help architecting a cross-platform app, or want to explore AI-powered mobile experiences —
+            I'd love to connect.
+          </p>
+          <p class="contact-text">
+            Drop me a message and I'll get back to you within 24 hours.
+          </p>
+          <a href="mailto:iamvaibhavuke@gmail.com" class="btn btn-primary contact-btn">
+            Say Hello ↗
+          </a>
+        </div>
+
+        <div class="contact-right reveal">
+          <a href="mailto:iamvaibhavuke@gmail.com" class="contact-item">
+            <div class="contact-item-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div class="contact-item-text">
+              <div class="contact-item-label">Email</div>
+              <div class="contact-item-val">iamvaibhavuke@gmail.com</div>
+            </div>
+            <div class="contact-item-arrow">→</div>
+          </a>
+
+          <a href="https://www.linkedin.com/in/vaibhav-uke/" target="_blank" rel="noopener" class="contact-item">
+            <div class="contact-item-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            </div>
+            <div class="contact-item-text">
+              <div class="contact-item-label">LinkedIn</div>
+              <div class="contact-item-val">linkedin.com/in/vaibhav-uke</div>
+            </div>
+            <div class="contact-item-arrow">→</div>
+          </a>
+
+          <a href="https://github.com/vaibhavuke" target="_blank" rel="noopener" class="contact-item">
+            <div class="contact-item-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            </div>
+            <div class="contact-item-text">
+              <div class="contact-item-label">GitHub</div>
+              <div class="contact-item-val">github.com/vaibhavuke</div>
+            </div>
+            <div class="contact-item-arrow">→</div>
+          </a>
+
+          <a href="tel:+917276883901" class="contact-item">
+            <div class="contact-item-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div class="contact-item-text">
+              <div class="contact-item-label">Phone</div>
+              <div class="contact-item-val">+91 72768 83901</div>
+            </div>
+            <div class="contact-item-arrow">→</div>
+          </a>
+
+          <div class="contact-item no-link">
+            <div class="contact-item-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div class="contact-item-text">
+              <div class="contact-item-label">Location</div>
+              <div class="contact-item-val">Pune, Maharashtra, India</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-logo">VU<span class="accent">.</span></span>
+        <p class="footer-copy">Designed &amp; built by Vaibhav Uke · 2025</p>
+        <div class="footer-socials">
+          <a href="https://github.com/vaibhavuke" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/vaibhav-uke/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="mailto:iamvaibhavuke@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
