@@ -69,7 +69,7 @@ img { max-width: 100%; display: block; }
 .reveal[data-delay="4"] { transition-delay: .24s; }
 .reveal[data-delay="5"] { transition-delay: .30s; }
 .reveal[data-delay="6"] { transition-delay: .36s; }
-.reveal.in-view { opacity: 1; transform: translateY(5px); }
+.reveal.in-view { opacity: 1; transform: translateY(10px); }
 
 @media (prefers-reduced-motion: reduce) {
   .reveal { opacity: 1; transform: none; transition: none; }
