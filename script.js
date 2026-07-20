@@ -1,6 +1,4 @@
-/* ═══════════════════════════════════════════════════════════
-   Vaibhav Uke — Portfolio Script
-   ═══════════════════════════════════════════════════════════ */
+
 (() => {
   'use strict';
 
@@ -147,9 +145,7 @@
   handleBackToTop();
 
   /* ─── EMAIL LINKS: COPY-TO-CLIPBOARD FALLBACK ─────────────── */
-  /* mailto: links only open something if a default mail client is
-     configured. If none is set, clicking silently does nothing — so
-     we copy the address and show visible confirmation either way. */
+
   document.querySelectorAll('a[href^="mailto:"]').forEach(link => {
     const email = link.getAttribute('href').replace('mailto:', '').split('?')[0];
     const originalHTML = link.innerHTML;
